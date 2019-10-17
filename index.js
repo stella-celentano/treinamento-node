@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.text())
 app.use(bodyParser.json({ type: 'application/json' }))
 
-const MovieRoutes = require('./routes/movie')
+const MovieRoutes = require('./routes/movie');
 
 app.get('/', function(req, res) {
     res.send('Api works')
